@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AutoLayout.iml" filepath="$PROJECT_DIR$/AutoLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ADmeo.iml" filepath="$PROJECT_DIR$/ADmeo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

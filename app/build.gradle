@@ -11,10 +11,27 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {    //签名设置
+        debug {
+//            storeFile file("../debug.keystore")     //debug使用统一签名，可以解决高德等SDK的key依赖问题
+            storeFile file("../android.keystore")
+            storePassword "CtripAndroid"
+            keyAlias "ctrip"
+            keyPassword "CtripAndroid"
+        }
+
+        release {
+            storeFile file("../android.keystore")
+            storePassword "CtripAndroid"
+            keyAlias "ctrip"
+            keyPassword "CtripAndroid"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }
